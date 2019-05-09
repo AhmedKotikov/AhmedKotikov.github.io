@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 	overflow-x:  hidden;
 	overflow-y: hidden;
-	transition: all 0.3s ease;
+	transition: all 0.4s ease;
 }
 
 body {
@@ -164,7 +164,7 @@ body {
 		text-align: center;
 	}
 	.slider__name {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.slider__title {
 		display: none;
@@ -173,7 +173,7 @@ body {
 
 @media screen and (max-width: 500px) {
 	.slider__title {
-		font-size: 15px;
+		font-size: 10px;
 		top: 4px;
 		display: block;
 	}

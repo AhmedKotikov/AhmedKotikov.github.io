@@ -66,7 +66,7 @@ body {
 	align-items: flex-end;
 }
 
-.slider__item:hover {
+.slider__item:hover, .slider__item:active {
 	flex-basis: 65%;
 }
 
@@ -168,14 +168,16 @@ body {
 	.slider__text {
 		display: none;
 	}
-
+	.slider__title {
+		font-size: 12px;
+		top: 4px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.slider__title {
 		font-size: 15px;
 		top: 4px;
-		display: block;	
 	}
 }
 

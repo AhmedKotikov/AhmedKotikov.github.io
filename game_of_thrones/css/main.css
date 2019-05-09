@@ -66,7 +66,7 @@ body {
 	align-items: flex-end;
 }
 
-.slider__item:hover, .slider__item:active {
+.slider__item:hover, .slider__item:active  {
 	flex-basis: 65%;
 }
 
@@ -150,7 +150,7 @@ body {
 		flex-basis: 50%;
 	}
 	.slider__title {
-		display: none;
+		font-size: 15px;
 	}
 }
 
@@ -165,12 +165,8 @@ body {
 	.slider__name {
 		font-size: 17px;
 	}
-	.slider__text {
-		display: none;
-	}
 	.slider__title {
-		font-size: 12px;
-		top: 4px;
+		display: none;
 	}
 }
 
@@ -178,6 +174,7 @@ body {
 	.slider__title {
 		font-size: 15px;
 		top: 4px;
+		display: block;
 	}
 }
 

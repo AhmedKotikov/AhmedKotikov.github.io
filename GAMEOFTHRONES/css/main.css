@@ -177,7 +177,7 @@ body {
 @media screen and (max-width: 500px) {
 	.slider__title {
 		font-size: 14px;
-		padding-top: 10px;
+		padding-top: 15px;
 		display: block;
 	}
 }

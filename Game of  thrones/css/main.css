@@ -1,0 +1,181 @@
+/* Шрифт Game of Thrones */
+
+@font-face {
+	font-family: "Game of Thrones";  
+	src: url("../fonts/Game of Thrones.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal;
+ }
+
+/* Спецификация */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x:  hidden;
+	overflow-y: hidden;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+/* Ссылка на пасхалку */
+
+.character__link {
+	cursor: default;
+}
+
+/* Главная страница */
+
+/* Зкран  */
+
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	position: relative;
+}
+
+.slider__title {
+	text-align: center;
+	position: absolute;
+	width: 900px;
+	left: 50%;
+	margin-left: -450px;
+	top: -20px;
+	font-size: 50px;
+	color: #fff;
+	letter-spacing: 6px;
+	z-index: 1;
+	font-family: "Game of Thrones"; 
+}
+
+.slider__item {
+	height: 100vh;
+	display: flex;
+	flex-basis: 25%;
+	transition: all 0.4s ease;
+	position: relative;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.slider__item:hover {
+	flex-basis: 65%;
+}
+
+.slider__item:active {
+	opacity: 0.9;
+}
+
+.slider__item a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Контейнеры с информацией о герое! */
+
+.slider__content {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	height: 200px;
+	background: #fff;
+	padding: 15px 10px;
+	transition: 0.5s ease;
+	text-align: justify;
+	opacity: 0;
+	border-radius: 50px 0 0 0;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'PT Sans', sans-serif; 
+}
+
+.slider__item:hover .slider__content {
+	opacity: 1;
+}
+
+.slider__name {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+}
+
+.slider__text {
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+/* Вставка изображений */
+
+.slider__item_first {
+	background: url(../img/photo_1.jpg) no-repeat center center / cover;
+}
+
+.slider__item_second {
+	background: url(../img/photo_2.jpg) no-repeat center center / cover;
+}
+
+.slider__item_third {
+	background: url(../img/photo_3.jpg) no-repeat center center / cover;
+}
+
+.slider__item_fourth {
+	background: url(../img/photo_4.jpg) no-repeat center center / cover;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 980px) {
+	.slider {
+		height: 100vh;
+		flex-direction: column;
+	}
+	.slider__item {
+		width: 100%;
+	}
+	.slider__item:hover {
+		flex-basis: 50%;
+	}
+	.slider__title {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.slider__content {
+		width: 200px;
+		height: 50px;
+		background: none;
+		padding: 0;
+		text-align: center;
+	}
+	.slider__name {
+		font-size: 17px;
+	}
+	.slider__text {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.slider__title {
+		font-size: 15px;
+		top: 4px;
+		display: block;	
+	}
+}
+

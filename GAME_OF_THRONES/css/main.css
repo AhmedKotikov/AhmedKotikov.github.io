@@ -172,13 +172,15 @@ body {
 	}
 	.slider__name {
 		font-size: 14px;
-		transition-delay: 1s;
 	}
 	.slider__title {
 		display: none;
 	}
 	.slider__text {
 		display: none;
+	}
+	.slider__item:hover .slider__content {
+		transition-delay: 2s;
 	}
 }
 

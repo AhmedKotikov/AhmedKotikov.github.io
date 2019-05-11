@@ -179,7 +179,7 @@ body {
 	.slider__text {
 		display: none;
 	}
-	.slider__item:hover .slider__content {
+	.slider__item:active .slider__content {
 		transition-delay: 2s;
 	}
 }

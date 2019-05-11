@@ -172,6 +172,7 @@ body {
 	}
 	.slider__name {
 		font-size: 14px;
+		transition-delay: 1s;
 	}
 	.slider__title {
 		display: none;

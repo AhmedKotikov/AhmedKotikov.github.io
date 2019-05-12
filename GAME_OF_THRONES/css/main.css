@@ -179,8 +179,8 @@ body {
 	.slider__text {
 		display: none;
 	}
-	.slider__item {
-		transition: 1s linear;
+	.slider__item:hover .slider__content {
+		transition: 1s ease-in-out;
 	}
 }
 

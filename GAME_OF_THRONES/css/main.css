@@ -179,9 +179,9 @@ body {
 	.slider__text {
 		display: none;
 	}
-	.slider__item:hover, .slider__item:active  {
-		transition-delay: 2s;
-	}	
+	.slider__item {
+		transition: 1s linear;
+	}
 }
 
 @media screen and (max-width: 500px) {

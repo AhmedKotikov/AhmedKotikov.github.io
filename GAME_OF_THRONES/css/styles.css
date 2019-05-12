@@ -73,6 +73,7 @@ a {
 	line-height: 1.6em;
 	font-size: 17px;
 	text-align: justify;
+	margin: 15px 0 0 15px;
 }
 
 .character__text:first-letter{
